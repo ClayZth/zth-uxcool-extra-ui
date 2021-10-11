@@ -1,8 +1,8 @@
 {
     "name": "zth-uxcool-extra-ui",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "description": "Uxcool Extra UI",
-    "main": "lib/lime-ui.min.js",
+    "main": "dist/zth-uxcool-extra-ui.min.js",
     "dependencies": {
         "async-validator": "^3.0.4",
         "core-js": "2.6.9",
@@ -54,8 +54,9 @@
         "clean": "rimraf lib",
         "build:style": "gulp --gulpfile build/gen-style.js",
         "build:components": "webpack --config build/webpack.component.js",
-        "build:prod": "webpack --config build/webpack.prod.js",
+        "build:prd": "webpack --config build/webpack.prd.js",
         "dist": "npm run test && npm run build:style && npm run build:prod && npm run build:components",
+        "build": "npm run build:style && npm run build:prd && npm run build:components",
         "deploy": "gh-pages -d docs/.vuepress/dist",
         "deploy:build": "npm run docs:build && npm run deploy",
         "test": "karma start test/karma.config.js --single-run"
