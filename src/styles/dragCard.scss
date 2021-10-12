@@ -1,0 +1,57 @@
+@import './common/color.scss';
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.z-cardMoveBox {
+    top: 20px;
+    left: 20px;
+    z-index: 300;
+    transition: none;
+}
+
+.z-transition {
+    transition: all 0.3s;
+}
+
+.z-cardOutsideBox {
+    user-select: none;
+    position: absolute;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .z-cardInsideBox {
+        .z-cardEmptyContent {
+            width: 100%;
+            height: 100%;
+            font-size: 16px;
+            color: $--color-deepGray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        border-radius: 5px;
+        box-shadow: 0 0 5px $--color-deepWhite;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        .z-cardHeaderBox {
+            cursor: move;
+            border-bottom: 1px solid $--color-lightWhite;
+            .z-cardHeader {
+                height: 50px;
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                color: $--color-deepGray;
+                background-color: $--color-white;
+                padding: 0px 15px;
+                .z-cardTitle {
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+}

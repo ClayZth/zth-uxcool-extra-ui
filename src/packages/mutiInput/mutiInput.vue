@@ -43,7 +43,7 @@
 </template>
 <script>
 export default {
-  name: "vueMutiInput",
+  name: "mutiInput",
   props: {
     placeholder: {
       type: String,

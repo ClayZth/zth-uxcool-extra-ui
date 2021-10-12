@@ -1,6 +1,8 @@
 import mutiInput from "./packages/mutiInput";
+import dragCard from './packages/dragCard'
 const components = {
-    zMutiInput: mutiInput
+    zMutiInput: mutiInput,
+    zDragCard: dragCard
 }
 
 const install = function(Vue) {
