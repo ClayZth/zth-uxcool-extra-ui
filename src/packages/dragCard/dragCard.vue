@@ -231,9 +231,9 @@ export default {
         cardDectect(moveTop + (scrollTop - originTop), moveLeft);
         document.querySelector(".z-cardMoveBox").classList.add("z-transition");
         document.querySelector(".z-cardMoveBox").style.top =
-          that.computeTop(selectMenuData.positionNum) + "px";
+          that.computeTop(selectData.positionNum) + "px";
         document.querySelector(".z-cardMoveBox").style.left =
-          that.computeLeft(selectMenuData.positionNum) + "px";
+          that.computeLeft(selectData.positionNum) + "px";
         that.mousedownTimer = setTimeout(() => {
           document.querySelector(".z-cardMoveBox").classList.remove("z-transition");
           document.querySelector(".z-cardMoveBox").classList.remove("d_moveBox");
