@@ -1,3 +1,4 @@
 {
-    "mutiInput": "packages/mutiInput/index.js"
+    "mutiInput": "packages/mutiInput/index.js",
+    "dragCard": "packages/dragCard/index.js"
 }
