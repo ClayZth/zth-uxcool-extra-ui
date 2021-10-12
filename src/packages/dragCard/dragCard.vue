@@ -210,7 +210,7 @@ export default {
         }
         if (newPosition < oldPosition) {
           let list = [];
-          for (let i = oldPosition11; i >= newPosition; i--) {
+          for (let i = oldPosition - 1; i >= newPosition; i--) {
             let pushData = that.cardData.find((item) => item.positionNum === i);
             list.push(pushData);
           }
