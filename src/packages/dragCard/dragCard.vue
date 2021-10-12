@@ -236,7 +236,7 @@ export default {
           that.computeLeft(selectData.positionNum) + "px";
         that.mousedownTimer = setTimeout(() => {
           document.querySelector(".z-cardMoveBox").classList.remove("z-transition");
-          document.querySelector(".z-cardMoveBox").classList.remove("d_moveBox");
+          document.querySelector(".z-cardMoveBox").classList.remove("z-cardMoveBox");
           clearTimeout(that.mousedownTimer);
           that.mousedownTimer = null;
         }, 300);
