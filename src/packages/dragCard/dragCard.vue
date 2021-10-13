@@ -106,7 +106,7 @@ export default {
       if (this.mousedownTimer) {
         return false;
       }
-
+      this.$emit('startDrag',event,selectId)
       let DectetTimer = null;
       let originTop =
         document.body.scrollTop === 0
@@ -229,6 +229,7 @@ export default {
         clearTimeout(DectetTimer);
         DectetTimer = null;
         cardDectect(moveTop + (scrollTop - originTop), moveLeft);
+        that.$emit('finishDrag',oldPositon,newPositon,selectData)
         document.querySelector(".z-cardMoveBox").classList.add("z-transition");
         document.querySelector(".z-cardMoveBox").style.top =
           that.computeTop(selectData.positionNum) + "px";
