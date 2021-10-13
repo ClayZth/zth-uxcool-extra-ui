@@ -229,7 +229,7 @@ export default {
         clearTimeout(DectetTimer);
         DectetTimer = null;
         cardDectect(moveTop + (scrollTop - originTop), moveLeft);
-        that.$emit('finishDrag',oldPositon,newPositon,selectData)
+        that.$emit('finishDrag',oldPosition,newPosition,selectData);
         document.querySelector(".z-cardMoveBox").classList.add("z-transition");
         document.querySelector(".z-cardMoveBox").style.top =
           that.computeTop(selectData.positionNum) + "px";

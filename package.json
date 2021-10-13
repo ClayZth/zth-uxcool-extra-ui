@@ -1,6 +1,6 @@
 {
     "name": "zth-uxcool-extra-ui",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Uxcool Extra UI",
     "main": "dist/zth-uxcool-extra-ui.min.js",
     "dependencies": {
