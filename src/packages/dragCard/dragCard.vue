@@ -124,8 +124,8 @@ export default {
         x: 0,
         y: 0,
       };
-      let oldNum = null,
-        newNum = null;
+      let oldPosition = null,
+        newPosition = null;
       let selectDom = document.getElementById(selectId);
       let selectData = this.cardData.find((item) => item.id === selectId);
 
@@ -191,8 +191,8 @@ export default {
       }
 
       function switchPosition(newItem, oldItem) {
-        let oldPosition = oldItem.positionNum;
-        let newPosition = newItem.positionNum;
+        oldPosition = oldItem.positionNum;
+        newPosition = newItem.positionNum;
         if (newPosition > oldPosition) {
           let list = [];
           for (let i = oldPosition + 1; i <= newPosition; i++) {
