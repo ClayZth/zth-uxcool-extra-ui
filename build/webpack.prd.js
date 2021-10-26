@@ -9,8 +9,8 @@ module.exports = merge(webpackBaseConfig, {
         main: path.resolve(__dirname, '../src/index.js')
     },
     output: {
-        path: path.resolve(__dirname, '../dist'),
-        publicPath: '/dist/',
+        path: path.resolve(__dirname, '../lib'),
+        publicPath: '/lib/',
         filename: 'zth-uxcool-extra-ui.min.js',
         library: 'zth-uxcool-extra-ui',
         libraryTarget: 'umd',

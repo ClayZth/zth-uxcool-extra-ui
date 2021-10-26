@@ -16,8 +16,8 @@ module.exports = merge(webpackBaseConfig, {
     mode: "production",
     entry: entries,
     output: {
-        path: path.resolve(__dirname, '../dist'),
-        publicPath: '/dist/',
+        path: path.resolve(__dirname, '../lib'),
+        publicPath: '/lib/',
         filename: '[name].js',
         chunkFilename: '[id].js',
         // library: 'lime-ui',

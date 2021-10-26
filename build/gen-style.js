@@ -11,7 +11,7 @@ function buildCss(cb) {
         .pipe(autoprefixer())
         .pipe(cleanCSS())
         .pipe(rename('zth-uxcool-extra-ui.css'))
-        .pipe(gulp.dest('../dist/styles'));
+        .pipe(gulp.dest('../lib/styles'));
     cb()
 }
 
@@ -22,7 +22,7 @@ function buildSeperateCss(cb) {
             .pipe(autoprefixer())
             .pipe(cleanCSS())
             .pipe(rename(`${compName}.css`))
-            .pipe(gulp.dest('../dist/styles'));
+            .pipe(gulp.dest('../lib/styles'));
     })
 
     cb()
