@@ -1,5 +1,5 @@
 import mutiInput from "./packages/mutiInput";
-import dragCard from './packages/dragCard'
+import dragCard from './packages/dragCard';
 const components = {
     zMutiInput: mutiInput,
     zDragCard: dragCard

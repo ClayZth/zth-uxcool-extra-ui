@@ -12,6 +12,16 @@
     ]
   ],
   "plugins": [
-    "@babel/plugin-transform-runtime"
+    "@babel/plugin-transform-runtime",
+    ["component",{
+        "libraryName":"zth-uxcool-extra-ui",
+        "libDir":"lib",
+        "styleLibrary":{
+          "name":"styles",
+          "base":false,
+          "path":"[module].css"
+        }
+      }
+    ]
   ]
 }
