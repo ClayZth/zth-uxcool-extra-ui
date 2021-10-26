@@ -15,7 +15,7 @@
     "@babel/plugin-transform-runtime",
     ["component",{
         "libraryName":"zth-uxcool-extra-ui",
-        "libDir":"lib",
+        "libDir":"dist",
         "styleLibrary":{
           "name":"styles",
           "base":false,
