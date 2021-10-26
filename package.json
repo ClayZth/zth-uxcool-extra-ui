@@ -1,8 +1,8 @@
 {
     "name": "zth-uxcool-extra-ui",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Uxcool Extra UI",
-    "main": "dist/zth-uxcool-extra-ui.min.js",
+    "main": "lib/zth-uxcool-extra-ui.min.js",
     "dependencies": {
         "async-validator": "^3.0.4",
         "babel-plugin-component": "^1.1.1",
