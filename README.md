@@ -12,6 +12,6 @@ npm install zth-uxcool-extra-ui
 使用
 ```js
 import zthUxcoolExtraUI from 'zth-uxcool-extra-ui'
-import "zth-uxcool-extra-ui/dist/styles/zth-uxcool-extra-ui.css"
+import "zth-uxcool-extra-ui/lib/styles/zth-uxcool-extra-ui.css"
 Vue.use(zthUxcoolExtraUI)
 ```
