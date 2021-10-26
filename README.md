@@ -15,7 +15,7 @@ import zthUxcoolExtraUI from 'zth-uxcool-extra-ui'
 import "zth-uxcool-extra-ui/lib/styles/zth-uxcool-extra-ui.css"
 Vue.use(zthUxcoolExtraUI)
 
-//
+//按需引入
 import Vue from 'vue'
 import {mutiInput,dragCard} from 'zth-uxcool-extra-ui'
 //由于只在组件库的入口处设置了install方法来注册组件
